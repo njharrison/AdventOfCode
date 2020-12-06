@@ -1,17 +1,18 @@
-﻿using System.Linq;
+﻿using AdventOfCode.Tasks;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace AdventOfCode.Day2
 {
-    class Task2
+    class Task2 : ITask
     {
-        public int Solve(string[] input)
+        public uint Solve(string[] input)
         {
             var passwordDefinitionRegex = new Regex("(?<Index1>.*)\\-(?<Index2>.*)\\ (?<Letter>.*)\\:\\ (?<Password>.*)");
 
             var actualArray = input.Select(a => passwordDefinitionRegex.Match(a));
 
-            var validPasswords = 0;
+            uint validPasswords = 0;
 
             foreach (var item in actualArray)
             {

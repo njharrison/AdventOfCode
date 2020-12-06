@@ -4,17 +4,20 @@ namespace AdventOfCode.Day4
 {
     internal class PassportListValidCounter
     {
-        private IPassportVerifier passportVerifier;
+        private readonly IPassportVerifier passportVerifier;
 
         public PassportListValidCounter(IPassportVerifier passportVerifier)
         {
             this.passportVerifier = passportVerifier;
         }
 
-        public int CalculateValidCount(string[] input)
+        public uint CalculateValidCount(string[] input)
         {
-            var passportList = new List<Dictionary<string, string>>();
-            passportList.Add(new Dictionary<string, string>());
+            var passportList = new List<Dictionary<string, string>>
+            {
+                new Dictionary<string, string>()
+            };
+
             foreach (var line in input)
             {
                 if (line == "")
@@ -27,12 +30,12 @@ namespace AdventOfCode.Day4
                     foreach (var item in items)
                     {
                         var kvp = item.Split(':');
-                        passportList[passportList.Count - 1].Add(kvp[0], kvp[1]);
+                        passportList[^1].Add(kvp[0], kvp[1]);
                     }
                 }
             }
 
-            var validPassportCount = 0;
+            uint validPassportCount = 0;
 
             foreach (var passport in passportList)
             {

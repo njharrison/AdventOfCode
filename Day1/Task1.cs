@@ -1,12 +1,13 @@
-﻿using System.Linq;
+﻿using AdventOfCode.Tasks;
+using System.Linq;
 
 namespace AdventOfCode.Day1
 {
-    class Task1
+    class Task1 : ITask
     {
-        public int Solve(string[] input)
+        public uint Solve(string[] input)
         {
-            var actualArray = input.Select(a => int.Parse(a));
+            var actualArray = input.Select(a => uint.Parse(a));
 
             foreach (var item1 in actualArray)
             {

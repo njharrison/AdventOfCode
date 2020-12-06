@@ -1,10 +1,11 @@
-﻿using System;
+﻿using AdventOfCode.Tasks;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace AdventOfCode.Day3
 {
-    class Task1
+    class Task1 : ITask
     {
         public uint Solve(string[] input)
         {

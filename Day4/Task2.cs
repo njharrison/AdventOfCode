@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdventOfCode.Tasks;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode.Day4
 {
-    class Task2 : IPassportVerifier
+    class Task2 : IPassportVerifier, ITask
     {
         public bool PassportValid(Dictionary<string, string> passport)
         {
@@ -20,7 +21,6 @@ namespace AdventOfCode.Day4
 
             if (valid)
             {
-                Console.WriteLine(passport["pid"]);
                 return true;
             }
 
@@ -93,9 +93,8 @@ namespace AdventOfCode.Day4
                 return false;
             }
 
-            int year;
 
-            if (!int.TryParse(passport[Key], out year))
+            if (!int.TryParse(passport[Key], out int year))
             {
                 return false;
             }
@@ -125,8 +124,7 @@ namespace AdventOfCode.Day4
                 return false;
             }
 
-            int number;
-            if (!int.TryParse(match.Groups["Number"].Value, out number))
+            if (!int.TryParse(match.Groups["Number"].Value, out int number))
             {
                 return false;
             }
@@ -145,7 +143,7 @@ namespace AdventOfCode.Day4
             return false;
         }
 
-        public int Solve(string[] input)
+        public uint Solve(string[] input)
         {
             var passportListValidCounter = new PassportListValidCounter(this);
 

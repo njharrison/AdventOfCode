@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using AdventOfCode.Tasks;
 using System.Linq;
-using System.Text;
 
 namespace AdventOfCode.Day1
 {
-    class Task2
+    class Task2 : ITask
     {
-        public int Solve(string[] input)
+        public uint Solve(string[] input)
         {
-            var actualArray = input.Select(a => int.Parse(a));
+            var actualArray = input.Select(a => uint.Parse(a));
 
             foreach (var item1 in actualArray)
             {

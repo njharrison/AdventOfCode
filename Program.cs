@@ -5,7 +5,7 @@ namespace AdventOfCode
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] _)
         {
             var day1Task1 = new Day1.Task1();
             Console.WriteLine("Day 1 Task 1 result: " + day1Task1.Solve(File.ReadAllLines("Day1\\Input.txt")));
@@ -26,6 +26,12 @@ namespace AdventOfCode
             Console.WriteLine("Day 4 Task 1 result: " + day4Task1.Solve(File.ReadAllLines("Day4\\Input.txt")));
             var day4Task2 = new Day4.Task2();
             Console.WriteLine("Day 4 Task 2 result: " + day4Task2.Solve(File.ReadAllLines("Day4\\Input.txt")));
+
+            var day5Task1 = new Day5.Task1();
+            Console.WriteLine("Day 5 Task 1 result: " + day5Task1.Solve(File.ReadAllLines("Day5\\Input.txt")));
+            var day5Task2 = new Day5.Task2();
+            Console.WriteLine("Day 5 Task 2 result: " + day5Task2.Solve(File.ReadAllLines("Day5\\Input.txt")));
+
 
         }
     }
