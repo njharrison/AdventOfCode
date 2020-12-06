@@ -32,7 +32,10 @@ namespace AdventOfCode
             var day5Task2 = new Day5.Task2();
             Console.WriteLine("Day 5 Task 2 result: " + day5Task2.Solve(File.ReadAllLines("Day5\\Input.txt")));
 
-
+            var day6Task1 = new Day6.Task1();
+            Console.WriteLine("Day 6 Task 1 result: " + day6Task1.Solve(File.ReadAllLines("Day6\\Input.txt")));
+            var day6Task2 = new Day6.Task2();
+            Console.WriteLine("Day 6 Task 2 result: " + day6Task2.Solve(File.ReadAllLines("Day6\\Input.txt")));
         }
     }
 }
