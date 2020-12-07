@@ -5,9 +5,9 @@ namespace AdventOfCode.Day1
 {
     class Task2 : ITask
     {
-        public uint Solve(string[] input)
+        public long Solve(string[] input)
         {
-            var actualArray = input.Select(a => uint.Parse(a));
+            var actualArray = input.Select(a => long.Parse(a));
 
             foreach (var item1 in actualArray)
             {

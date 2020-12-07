@@ -5,11 +5,11 @@ namespace AdventOfCode.Day5
 {
     class Task1 : ITask
     {
-        public uint Solve(string[] input)
+        public long Solve(string[] input)
         {
             var seatConverter = new SeatConverter();
 
-            uint maxSeatId = 0;
+            long maxSeatId = 0;
 
             foreach (var line in input)
             {

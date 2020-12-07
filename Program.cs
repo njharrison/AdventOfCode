@@ -36,6 +36,11 @@ namespace AdventOfCode
             Console.WriteLine("Day 6 Task 1 result: " + day6Task1.Solve(File.ReadAllLines("Day6\\Input.txt")));
             var day6Task2 = new Day6.Task2();
             Console.WriteLine("Day 6 Task 2 result: " + day6Task2.Solve(File.ReadAllLines("Day6\\Input.txt")));
+
+            var day7Task1 = new Day7.Task1();
+            Console.WriteLine("Day 7 Task 1 result: " + day7Task1.Solve(File.ReadAllLines("Day7\\Input.txt")));
+            var day7Task2 = new Day7.Task2();
+            Console.WriteLine("Day 7 Task 2 result: " + day7Task2.Solve(File.ReadAllLines("Day7\\Input.txt")));
         }
     }
 }

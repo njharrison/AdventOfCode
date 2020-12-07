@@ -6,7 +6,7 @@ namespace AdventOfCode.Day5
 {
     class Task2 : ITask
     {
-        public uint Solve(string[] input)
+        public long Solve(string[] input)
         {
             var seatConverter = new SeatConverter();
 

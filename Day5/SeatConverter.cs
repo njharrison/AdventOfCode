@@ -8,15 +8,15 @@ namespace AdventOfCode.Day5
 {
     class SeatConverter
     {
-        internal uint GetSeatId(string identifier)
+        internal long GetSeatId(string identifier)
         {
             var binary = identifier.Select(a => a == 'B' || a == 'R').Reverse().ToArray();
             var bitArray = new BitArray(binary);
 
-            var uintArray = new uint[1];
-            bitArray.CopyTo(uintArray, 0);
+            var longArray = new uint[1];
+            bitArray.CopyTo(longArray, 0);
 
-            return uintArray[0];
+            return longArray[0];
         }
     }
 }

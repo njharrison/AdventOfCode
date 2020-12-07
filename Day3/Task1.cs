@@ -7,7 +7,7 @@ namespace AdventOfCode.Day3
 {
     class Task1 : ITask
     {
-        public uint Solve(string[] input)
+        public long Solve(string[] input)
         {
             var treeCounter = new TreeCounter();
 
