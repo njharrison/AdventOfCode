@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace AdventOfCode.Day6
+namespace AdventOfCode.Day06
 {
-    internal class Day6TaskBase
+    internal class Day06TaskBase
     {
         protected List<List<string>> GetPassengerIssuesList(string[] input)
         {

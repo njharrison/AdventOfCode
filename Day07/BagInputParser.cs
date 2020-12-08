@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace AdventOfCode.Day7
+namespace AdventOfCode.Day07
 {
     class BagInputParser
     {

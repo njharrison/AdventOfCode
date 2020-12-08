@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AdventOfCode.Day7
+namespace AdventOfCode.Day07
 {
     class Task1 : ITask
     {

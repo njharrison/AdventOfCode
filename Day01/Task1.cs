@@ -1,7 +1,7 @@
 ﻿using AdventOfCode.Tasks;
 using System.Linq;
 
-namespace AdventOfCode.Day1
+namespace AdventOfCode.Day01
 {
     class Task1 : ITask
     {

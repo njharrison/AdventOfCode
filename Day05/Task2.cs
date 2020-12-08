@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-namespace AdventOfCode.Day5
+namespace AdventOfCode.Day05
 {
     class Task2 : ITask
     {

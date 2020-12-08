@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace AdventOfCode.Day4
+namespace AdventOfCode.Day04
 {
     class Task2 : IPassportVerifier, ITask
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AdventOfCode.Day4
+namespace AdventOfCode.Day04
 {
     internal class PassportListValidCounter
     {

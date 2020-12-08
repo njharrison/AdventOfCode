@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AdventOfCode.Day5
+namespace AdventOfCode.Day05
 {
     class SeatConverter
     {

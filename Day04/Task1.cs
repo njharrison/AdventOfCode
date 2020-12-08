@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AdventOfCode.Day4
+namespace AdventOfCode.Day04
 {
     class Task1 : IPassportVerifier, ITask
     {

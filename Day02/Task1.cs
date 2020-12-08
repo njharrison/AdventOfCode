@@ -2,13 +2,13 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace AdventOfCode.Day2
+namespace AdventOfCode.Day02
 {
-    class Task2 : ITask
+    class Task1 : ITask
     {
         public long Solve(string[] input)
         {
-            var passwordDefinitionRegex = new Regex("(?<Index1>.*)\\-(?<Index2>.*)\\ (?<Letter>.*)\\:\\ (?<Password>.*)");
+            var passwordDefinitionRegex = new Regex("(?<Minimum>.*)\\-(?<Maximum>.*)\\ (?<Letter>.*)\\:\\ (?<Password>.*)");
 
             var actualArray = input.Select(a => passwordDefinitionRegex.Match(a));
 
@@ -16,13 +16,14 @@ namespace AdventOfCode.Day2
 
             foreach (var item in actualArray)
             {
-                var index1 = int.Parse(item.Groups["Index1"].Value);
-                var index2 = int.Parse(item.Groups["Index2"].Value);
+                var minimum = int.Parse(item.Groups["Minimum"].Value);
+                var maximum = int.Parse(item.Groups["Maximum"].Value);
                 var letter = item.Groups["Letter"].Value[0];
                 var password = item.Groups["Password"].Value;
 
-                if ((password.Length >= index1 && password[index1 - 1] == letter)
-                    ^ (password.Length >= index2 && password[index2 - 1] == letter))
+                var actualCount = password.Count(a => a == letter);
+
+                if (actualCount >= minimum && actualCount <= maximum)
                 {
                     validPasswords++;
                 }

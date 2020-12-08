@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AdventOfCode.Day3
+namespace AdventOfCode.Day03
 {
     class Task1 : ITask
     {

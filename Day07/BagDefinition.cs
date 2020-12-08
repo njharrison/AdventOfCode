@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AdventOfCode.Day7
+namespace AdventOfCode.Day07
 {
     public class BagDefinition
     {

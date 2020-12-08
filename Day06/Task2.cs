@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace AdventOfCode.Day6
+namespace AdventOfCode.Day06
 {
-    class Task2 : Day6TaskBase, ITask
+    class Task2 : Day06TaskBase, ITask
     {
         public long Solve(string[] input)
         {

@@ -1,7 +1,7 @@
 ﻿using AdventOfCode.Tasks;
 
 
-namespace AdventOfCode.Day5
+namespace AdventOfCode.Day05
 {
     class Task1 : ITask
     {
