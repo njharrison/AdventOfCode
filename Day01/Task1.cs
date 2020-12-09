@@ -1,4 +1,5 @@
-﻿using AdventOfCode.Tasks;
+﻿using AdventOfCode.Library;
+using AdventOfCode.Tasks;
 using System.Linq;
 
 namespace AdventOfCode.Day01
@@ -9,16 +10,9 @@ namespace AdventOfCode.Day01
         {
             var actualArray = input.Select(a => long.Parse(a));
 
-            foreach (var item1 in actualArray)
-            {
-                foreach (var item2 in actualArray)
-                {
-                    if (item1 + item2 == 2020)
-                    {
-                        return item1 * item2;
-                    }
-                }
-            }
+            var result = ArrayCheck.FindTwoValuesWithSum(actualArray, 2020);
+
+            return result.Item1 * result.Item2;
 
             throw new System.ArgumentException("Argument must contain two integers that sum to 2020");
         }
