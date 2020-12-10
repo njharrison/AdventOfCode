@@ -19,7 +19,7 @@ namespace AdventOfCode
             {
                 var task = (ITask)Activator.CreateInstance(taskType);
                 var input = File.ReadAllLines(taskType.Namespace.Split('.').Last() + "\\Input.txt");
-                stopwatch.Start(); 
+                stopwatch.Restart(); 
                 Console.WriteLine(taskType.FullName + " result: " + task.Solve(input) + " in " + stopwatch.ElapsedMilliseconds + "ms");
             }
         }
