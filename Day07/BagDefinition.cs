@@ -4,7 +4,7 @@ namespace AdventOfCode.Day07
 {
     public class BagDefinition
     {
-        readonly Dictionary<string, int> childBags = new Dictionary<string, int>();
+        readonly Dictionary<string, ulong> childBags = new Dictionary<string, ulong>();
 
         public BagDefinition(string colour)
         {
@@ -13,6 +13,6 @@ namespace AdventOfCode.Day07
 
         public string Colour { get; }
 
-        public Dictionary<string, int> ChildBags => childBags;
+        public Dictionary<string, ulong> ChildBags => childBags;
     }
 }

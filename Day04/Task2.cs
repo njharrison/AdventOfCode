@@ -143,7 +143,7 @@ namespace AdventOfCode.Day04
             return false;
         }
 
-        public long Solve(string[] input)
+        public ulong Solve(string[] input)
         {
             var passportListValidCounter = new PassportListValidCounter(this);
 

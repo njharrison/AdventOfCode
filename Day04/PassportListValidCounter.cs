@@ -11,7 +11,7 @@ namespace AdventOfCode.Day04
             this.passportVerifier = passportVerifier;
         }
 
-        public long CalculateValidCount(string[] input)
+        public ulong CalculateValidCount(string[] input)
         {
             var passportList = new List<Dictionary<string, string>>
             {
@@ -35,7 +35,7 @@ namespace AdventOfCode.Day04
                 }
             }
 
-            long validPassportCount = 0;
+            ulong validPassportCount = 0;
 
             foreach (var passport in passportList)
             {

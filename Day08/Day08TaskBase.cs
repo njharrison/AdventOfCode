@@ -5,10 +5,10 @@ namespace AdventOfCode.Day08
 {
     internal class Day08TaskBase
     {
-        protected Tuple<long, bool> ExecuteProgram(List<Instruction> instructionList)
+        protected Tuple<ulong, bool> ExecuteProgram(List<Instruction> instructionList)
         {
             var address = 0;
-            var accumulator = 0;
+            ulong accumulator = 0;
 
             while (address < instructionList.Count && instructionList[address].TimesVisited == 0)
             {
@@ -19,7 +19,7 @@ namespace AdventOfCode.Day08
                 }
                 else if (instruction.Command == "acc")
                 {
-                    accumulator += instruction.Offset;
+                    accumulator += (ulong)instruction.Offset;
                     address++;
                 }
                 else if (instruction.Command == "nop")
@@ -34,7 +34,7 @@ namespace AdventOfCode.Day08
                 instruction.TimesVisited++;
             }
 
-            return new Tuple<long, bool>(accumulator, address == instructionList.Count);
+            return new Tuple<ulong, bool>(accumulator, address == instructionList.Count);
         }
 
         protected List<Instruction> ParseInstructions(string[] input)

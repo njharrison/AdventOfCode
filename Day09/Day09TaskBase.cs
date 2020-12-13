@@ -8,13 +8,13 @@ namespace AdventOfCode.Day09
     {
         const int queueLength = 25;
 
-        protected abstract long ProcessResult(IList<long> encodingQueue, int queueIndex);
+        protected abstract ulong ProcessResult(IList<ulong> encodingQueue, int queueIndex);
 
-        public long Solve(string[] input)
+        public ulong Solve(string[] input)
         {
-            var encodingList = input.Select(a => long.Parse(a)).ToList();
+            var encodingList = input.Select(a => ulong.Parse(a)).ToList();
 
-            var encodingQueue = new Queue<long>(queueLength);
+            var encodingQueue = new Queue<ulong>(queueLength);
 
             for (var index = 0; index < encodingList.Count; index++)
             {
@@ -34,7 +34,7 @@ namespace AdventOfCode.Day09
                 encodingQueue.Enqueue(encodingList[index]);
             }
 
-            return -1;
+            return ulong.MinValue;
         }
     }
 }

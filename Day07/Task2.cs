@@ -8,7 +8,7 @@ namespace AdventOfCode.Day07
 {
     class Task2 : ITask
     {
-        public long Solve(string[] input)
+        public ulong Solve(string[] input)
         {
             var bagParser = new BagInputParser();
 
@@ -19,9 +19,9 @@ namespace AdventOfCode.Day07
             return result;
         }
 
-        private long SearchBagPaths(string bagColour, List<BagDefinition> bagDefinitions)
+        private ulong SearchBagPaths(string bagColour, List<BagDefinition> bagDefinitions)
         {
-            long result = 0;
+            ulong result = 0;
 
             var bagDefinition = bagDefinitions.Find(a => a.Colour == bagColour);
 

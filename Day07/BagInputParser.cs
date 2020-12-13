@@ -36,7 +36,7 @@ namespace AdventOfCode.Day07
 
                     for (var i = 0; i < result.Groups["ChildBagColour"].Captures.Count; i++)
                     {
-                        bagDefinition.ChildBags.Add(result.Groups["ChildBagColour"].Captures[i].Value, int.Parse(result.Groups["ChildBagCount"].Captures[i].Value));
+                        bagDefinition.ChildBags.Add(result.Groups["ChildBagColour"].Captures[i].Value, ulong.Parse(result.Groups["ChildBagCount"].Captures[i].Value));
                     }
                 }
 

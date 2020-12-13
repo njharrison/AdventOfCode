@@ -6,12 +6,12 @@ namespace AdventOfCode.Day03
 {
     class TreeCounter
     {
-        public long CountTrees(string[] input, int rightSkip, int downSkip)
+        public ulong CountTrees(string[] input, int rightSkip, int downSkip)
         {
             var rightIndex = 0;
             var downIndex = 0;
 
-            long treeCount = 0;
+            ulong treeCount = 0;
 
             while (downIndex < input.Length)
             {

@@ -6,13 +6,13 @@ namespace AdventOfCode.Day02
 {
     class Task1 : ITask
     {
-        public long Solve(string[] input)
+        public ulong Solve(string[] input)
         {
             var passwordDefinitionRegex = new Regex("(?<Minimum>.*)\\-(?<Maximum>.*)\\ (?<Letter>.*)\\:\\ (?<Password>.*)");
 
             var actualArray = input.Select(a => passwordDefinitionRegex.Match(a));
 
-            long validPasswords = 0;
+            ulong validPasswords = 0;
 
             foreach (var item in actualArray)
             {

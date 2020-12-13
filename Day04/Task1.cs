@@ -15,7 +15,7 @@ namespace AdventOfCode.Day04
             return requiredFields.All(a => passport.ContainsKey(a));
         }
 
-        public long Solve(string[] input)
+        public ulong Solve(string[] input)
         {
             var passportListValidCounter = new PassportListValidCounter(this);
 

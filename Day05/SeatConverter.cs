@@ -8,7 +8,7 @@ namespace AdventOfCode.Day05
 {
     class SeatConverter
     {
-        internal long GetSeatId(string identifier)
+        internal ulong GetSeatId(string identifier)
         {
             var binary = identifier.Select(a => a == 'B' || a == 'R').Reverse().ToArray();
             var bitArray = new BitArray(binary);

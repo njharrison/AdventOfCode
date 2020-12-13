@@ -8,7 +8,7 @@ namespace AdventOfCode.Day06
 {
     class Task1 : Day06TaskBase, ITask
     {
-        public long Solve(string[] input)
+        public ulong Solve(string[] input)
         {
             List<List<string>> passengers = GetPassengerIssuesList(input);
 
@@ -18,7 +18,7 @@ namespace AdventOfCode.Day06
                 return result.Distinct().Count();
             }).ToList();
 
-            var result = passengerIssues.Aggregate(0, (a, b) => a + b, c => (long)c);
+            var result = passengerIssues.Aggregate(0, (a, b) => a + b, c => (ulong)c);
 
             return result;
         }

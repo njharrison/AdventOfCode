@@ -9,13 +9,13 @@ namespace AdventOfCode.Day09
 {
     class Task2 : Day09TaskBase, ITask
     {
-        protected override long ProcessResult(IList<long> encodingList, int listIndex)
+        protected override ulong ProcessResult(IList<ulong> encodingList, int listIndex)
         {
             var desiredValue = encodingList[listIndex];
 
             for (var i = 0; i < listIndex; i++)
             {
-                long sum = 0;
+                ulong sum = 0;
                 var j = i;
                 while (j < listIndex && sum < desiredValue)
                 {
@@ -28,7 +28,7 @@ namespace AdventOfCode.Day09
                 }
             }
 
-            return -1;
+            return ulong.MinValue;
         }
     }
 }

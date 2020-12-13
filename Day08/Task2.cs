@@ -7,7 +7,7 @@ namespace AdventOfCode.Day08
 {
     class Task2 : Day08TaskBase, ITask
     {
-        public long Solve(string[] input)
+        public ulong Solve(string[] input)
         {
             var instructionList = this.ParseInstructions(input);
 
@@ -30,7 +30,7 @@ namespace AdventOfCode.Day08
                 this.ReverseInstruction(instructionList[i]);
             }
 
-            return -1;
+            return ulong.MinValue;
         }
 
         private void ReverseInstruction(Instruction instruction)

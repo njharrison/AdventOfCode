@@ -9,7 +9,7 @@ namespace AdventOfCode.Day09
 {
     class Task1 : Day09TaskBase, ITask
     {
-        protected override long ProcessResult(IList<long> encodingQueue, int queueIndex)
+        protected override ulong ProcessResult(IList<ulong> encodingQueue, int queueIndex)
         {
             return encodingQueue[queueIndex];
         }
