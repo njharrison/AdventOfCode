@@ -1,9 +1,6 @@
-﻿using AdventOfCode.Library;
-using AdventOfCode.Tasks;
-using System;
+﻿using AdventOfCode.Tasks;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace AdventOfCode.Day13
 {
@@ -33,9 +30,12 @@ namespace AdventOfCode.Day13
                 }
             }
 
-            var alreadyFactorised = new HashSet<ulong>();
-            alreadyFactorised.Add(schedules[maxIndex]);
-            alreadyFactorised.Add(ulong.MaxValue);
+            var alreadyFactorised = new HashSet<ulong>
+            {
+                schedules[maxIndex],
+                ulong.MaxValue
+            };
+
             var timeSkip = schedules[maxIndex];
 
             var testTime = schedules[maxIndex] - (ulong)maxIndex;

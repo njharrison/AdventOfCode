@@ -1,5 +1,4 @@
-﻿using AdventOfCode.Library;
-using AdventOfCode.Tasks;
+﻿using AdventOfCode.Tasks;
 using System.Linq;
 
 namespace AdventOfCode.Day01
