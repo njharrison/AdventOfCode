@@ -7,7 +7,7 @@ using System.Text;
 
 namespace AdventOfCode.Day13
 {
-    class Task2 : Day13TaskBase, ITask
+    class Task2 : Day14TaskBase, ITask
     {
         public ulong Solve(string[] input)
         {
@@ -33,9 +33,11 @@ namespace AdventOfCode.Day13
                 }
             }
 
-            var alreadyFactorised = new HashSet<ulong>();
-            alreadyFactorised.Add(schedules[maxIndex]);
-            alreadyFactorised.Add(ulong.MaxValue);
+            var alreadyFactorised = new HashSet<ulong>
+            {
+                schedules[maxIndex],
+                ulong.MaxValue
+            };
             var timeSkip = schedules[maxIndex];
 
             var testTime = schedules[maxIndex] - (ulong)maxIndex;
