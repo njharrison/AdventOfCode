@@ -25,7 +25,9 @@ namespace AdventOfCode.Day11
             return this.CountOccurencesOf(seatArray, occupiedSeat);
         }
 
+#pragma warning disable IDE0051 // Remove unused private members - used for debugging
         private void WriteSeatArray(char[,] seatArray)
+#pragma warning restore IDE0051 // Remove unused private members
         {
             for (var i = 0; i < seatArray.GetLength(1); i++)
             {
