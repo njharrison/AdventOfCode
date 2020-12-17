@@ -11,7 +11,7 @@ namespace AdventOfCode
     {
         static void Main(string[] _)
         {
-            var taskTypes = Assembly.GetExecutingAssembly().GetTypes().Where(a => typeof(ITask).IsAssignableFrom(a) && a.IsClass).OrderBy(a => a.FullName);
+            var taskTypes = Assembly.GetExecutingAssembly().GetTypes().Where(a => typeof(ITask).IsAssignableFrom(a) && a.IsClass).OrderBy(a => a.FullName).Reverse();
 
             var stopwatch = new Stopwatch();
 
