@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode.Day19
 {
-    abstract internal class Day19TaskBase
+    abstract internal class Day20TaskBase
     {
 
         protected ulong SolveForInput(string[] input)

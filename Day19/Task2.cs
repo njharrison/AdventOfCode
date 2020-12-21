@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode.Day19
 {
-    class Task2 : Day19TaskBase, ITask
+    class Task2 : Day20TaskBase, ITask
     {
         public ulong Solve(string[] input)
         {
