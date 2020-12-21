@@ -6,7 +6,7 @@ using System.Text;
 
 namespace AdventOfCode.Day13
 {
-    class Task1 : Day14TaskBase, ITask
+    class Task1 : Day13TaskBase, ITask
     {
         public ulong Solve(string[] input)
         {

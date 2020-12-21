@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode.Day16
 {
-    abstract internal class Day17TaskBase
+    abstract internal class Day16TaskBase
     {
         protected void GetRulesAndTickets(string[] input, out Dictionary<string, List<Tuple<int, int>>> rules, out List<int[]> tickets)
         {

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AdventOfCode.Day13
 {
-    abstract internal class Day14TaskBase
+    abstract internal class Day13TaskBase
     {
         
     }

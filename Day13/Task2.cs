@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AdventOfCode.Day13
 {
-    class Task2 : Day14TaskBase, ITask
+    class Task2 : Day13TaskBase, ITask
     {
         public ulong Solve(string[] input)
         {

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AdventOfCode.Day10
 {
-    abstract internal class Day11TaskBase
+    abstract internal class Day10TaskBase
     {
         protected List<int> PopulateAdapterList(string[] input)
         {

@@ -52,8 +52,6 @@ namespace AdventOfCode.Day20
 
         public int CountOfPattern(List<string> source)
         {
-            var countOfPattern = 0;
-
             for (var y = 0; y < source.Count - pattern.Length + startsFirst; y++)
             {
                 for (var x = 0; x < source[y].Length - pattern[endsLast].Length; x++)
