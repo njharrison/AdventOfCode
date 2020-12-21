@@ -7,10 +7,10 @@ namespace AdventOfCode.Day20
 {
     class PatternMatch
     {
-        string[] pattern = new string[3];
+        readonly string[] pattern = new string[3];
 
-        int startsFirst = 1;
-        int endsLast = 1;
+        readonly int startsFirst = 1;
+        readonly int endsLast = 1;
 
         public PatternMatch()
         {

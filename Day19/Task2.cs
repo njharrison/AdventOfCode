@@ -14,7 +14,9 @@ namespace AdventOfCode.Day19
         {
             return 0;
 
+#pragma warning disable CS0162 // Unreachable code detected - disabled because of performance
             for (var i = 0; i < input.Length; i++)
+#pragma warning restore CS0162 // Unreachable code detected
             {
                 var line = input[i];
                 if (line.StartsWith("8:"))
