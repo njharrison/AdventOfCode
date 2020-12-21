@@ -16,7 +16,7 @@ namespace AdventOfCode.Day17
 
             for (int i = 0; i < 6; i++)
             {
-                base.WriteCubeToConsole(cube);
+                //base.WriteCubeToConsole(cube);
 
                 cube = base.Iterate(cube);
             }
