@@ -10,9 +10,9 @@ namespace AdventOfCode.Day15
 {
     class Task2 : Day15TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
-            return base.Solve(input, 30000000);
+            return this.Solve(input, 30000000).ToString();
         }
     }
 }

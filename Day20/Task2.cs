@@ -10,7 +10,7 @@ namespace AdventOfCode.Day20
 {
     class Task2 : Day20TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var tiles = this.ParseInputs(input);
 
@@ -27,7 +27,7 @@ namespace AdventOfCode.Day20
 
                     for (var j = 0; j < tileArray.GetLength(1); j++)
                     {
-                        combined = combined + tileArray[j, i].Description[i1].Substring(1, tileArray[j, i].Description[i1].Length - 2);
+                        combined += tileArray[j, i].Description[i1][1..^1];
                     }
 
                     fullMap[i * (tileArray[0, 0].Description.Count - 2) + i1 - 1] = combined;
@@ -37,7 +37,7 @@ namespace AdventOfCode.Day20
 
             var patternMatch = new PatternMatch();
 
-            return (ulong)patternMatch.MaxPatternMatches(fullMap);
+            return patternMatch.MaxPatternMatches(fullMap).ToString();
         }
 
         private Tile[,] GetTileArray(List<Tile> tiles, List<Tile> cornerMatches)

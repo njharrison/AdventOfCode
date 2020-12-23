@@ -10,9 +10,9 @@ namespace AdventOfCode.Day19
 {
     class Task2 : Day20TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
-            return 0;
+            return string.Empty;
 
 #pragma warning disable CS0162 // Unreachable code detected - disabled because of performance
             for (var i = 0; i < input.Length; i++)
@@ -29,7 +29,7 @@ namespace AdventOfCode.Day19
                 }
             }
 
-            return base.SolveForInput(input);
+            return base.SolveForInput(input).ToString();
         }
     }
 }

@@ -7,10 +7,10 @@ namespace AdventOfCode.Day08
 {
     class Task1 : Day08TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var instructionList = ParseInstructions(input);
-            return ExecuteProgram(instructionList).Item1;
+            return ExecuteProgram(instructionList).Item1.ToString();
         }
 
 

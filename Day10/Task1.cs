@@ -8,7 +8,7 @@ namespace AdventOfCode.Day10
 {
     class Task1 : Day10TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             List<int> adapterArray = PopulateAdapterList(input);
 
@@ -17,7 +17,7 @@ namespace AdventOfCode.Day10
             {
                 differenceArray.Add(adapterArray[i + 1] - adapterArray[i]);
             }
-            return (ulong)(differenceArray.Where(a => a == 3).Count() * differenceArray.Where(a => a == 1).Count());
+            return (differenceArray.Where(a => a == 3).Count() * differenceArray.Where(a => a == 1).Count()).ToString();
         }
     }
 }

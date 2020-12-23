@@ -7,11 +7,11 @@ namespace AdventOfCode.Day03
 {
     class Task1 : ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var treeCounter = new TreeCounter();
 
-            return treeCounter.CountTrees(input, 3, 1);
+            return treeCounter.CountTrees(input, 3, 1).ToString();
         }
     }
 }

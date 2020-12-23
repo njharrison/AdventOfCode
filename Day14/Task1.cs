@@ -10,7 +10,7 @@ namespace AdventOfCode.Day14
 {
     class Task1 : Day14TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var zeroMask = new BitArray(36);
             var oneMask = new BitArray(36);
@@ -68,7 +68,7 @@ namespace AdventOfCode.Day14
                 sum += longArray[0] + ((ulong)longArray[1] << 32);
             }
 
-            return sum;
+            return sum.ToString();
         }
 
 

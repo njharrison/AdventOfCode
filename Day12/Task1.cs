@@ -8,7 +8,7 @@ namespace AdventOfCode.Day12
 {
     class Task1 : Day12TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var x = 0.0;
             var y = 0.0;
@@ -48,7 +48,7 @@ namespace AdventOfCode.Day12
                 }
             }
 
-            return (ulong)(Math.Abs(x) + Math.Abs(y));
+            return (Math.Abs(x) + Math.Abs(y)).ToString();
         }
 
 

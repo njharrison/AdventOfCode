@@ -8,7 +8,7 @@ namespace AdventOfCode.Day10
 {
     class Task2 : Day10TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var adapterList = PopulateAdapterList(input);
 
@@ -30,7 +30,7 @@ namespace AdventOfCode.Day10
                 jumpOptions.Add(adapterList[i], options);
             }
 
-            return jumpOptions[0];
+            return jumpOptions[0].ToString();
         }
     }
 }

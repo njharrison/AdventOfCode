@@ -10,7 +10,7 @@ namespace AdventOfCode.Day17
 {
     class Task2 : Day17TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var cube = base.Construct4DCubeFromInput(input);
 
@@ -21,7 +21,7 @@ namespace AdventOfCode.Day17
                 cube = base.Iterate(cube);
             }
 
-            return (ulong)cube.Count;
+            return cube.Count.ToString();
         }
     }
 }

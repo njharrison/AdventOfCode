@@ -6,7 +6,7 @@ namespace AdventOfCode.Day13
 {
     class Task2 : Day13TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var schedules = input[1].Split(',').Select(a =>
             {
@@ -61,7 +61,7 @@ namespace AdventOfCode.Day13
                 }
             }
 
-            return testTime;
+            return testTime.ToString();
         }
     }
 }

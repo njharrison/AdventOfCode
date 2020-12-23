@@ -8,7 +8,7 @@ namespace AdventOfCode.Day06
 {
     class Task1 : Day06TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             List<List<string>> passengers = GetPassengerIssuesList(input);
 
@@ -20,7 +20,7 @@ namespace AdventOfCode.Day06
 
             var result = passengerIssues.Aggregate(0, (a, b) => a + b, c => (ulong)c);
 
-            return result;
+            return result.ToString();
         }
     }
 }

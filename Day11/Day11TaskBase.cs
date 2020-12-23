@@ -10,7 +10,7 @@ namespace AdventOfCode.Day11
         protected const char unoccupiedSeat = 'L';
         protected const char floor = '.';
 
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             char[,] seatArray = this.ReadInput(input);
             char[,] lastSeatArray;
@@ -22,7 +22,7 @@ namespace AdventOfCode.Day11
             }
             while (!this.AreEqual(lastSeatArray, seatArray));
 
-            return this.CountOccurencesOf(seatArray, occupiedSeat);
+            return this.CountOccurencesOf(seatArray, occupiedSeat).ToString();
         }
 
 #pragma warning disable IDE0051 // Remove unused private members - used for debugging

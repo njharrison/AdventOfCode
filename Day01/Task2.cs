@@ -5,7 +5,7 @@ namespace AdventOfCode.Day01
 {
     class Task2 : ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var actualArray = input.Select(a => ulong.Parse(a));
 
@@ -17,7 +17,7 @@ namespace AdventOfCode.Day01
                     {
                         if (item1 + item2 + item3 == 2020)
                         {
-                            return item1 * item2 * item3;
+                            return (item1 * item2 * item3).ToString();
                         }
                     }
                 }

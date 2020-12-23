@@ -10,7 +10,7 @@ namespace AdventOfCode.Day16
 {
     class Task1 : Day16TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             GetRulesAndTickets(input, out Dictionary<string, List<Tuple<int, int>>> rules, out List<int[]> tickets);
 
@@ -21,7 +21,7 @@ namespace AdventOfCode.Day16
                 total += (ulong)allInvalidValues.Sum();
             }
 
-            return total;
+            return total.ToString();
         }
 
 

@@ -10,7 +10,7 @@ namespace AdventOfCode.Day16
 {
     class Task2 : Day16TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             GetRulesAndTickets(input, out Dictionary<string, List<Tuple<int, int>>> rules, out List<int[]> tickets);
             tickets = StripInvalidTickets(tickets, rules);
@@ -44,7 +44,7 @@ namespace AdventOfCode.Day16
                 }
             }
             
-            return myProduct;
+            return myProduct.ToString();
         }
 
         private List<string> FindRuleForIndex(List<int[]> tickets, int valueIndex, Dictionary<string, List<Tuple<int, int>>> rules)

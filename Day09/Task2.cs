@@ -8,7 +8,7 @@ namespace AdventOfCode.Day09
 {
     class Task2 : Day09TaskBase, ITask
     {
-        protected override ulong ProcessResult(IList<ulong> encodingList, int listIndex)
+        protected override string ProcessResult(IList<ulong> encodingList, int listIndex)
         {
             var desiredValue = encodingList[listIndex];
 
@@ -23,11 +23,11 @@ namespace AdventOfCode.Day09
 
                 if (sum == desiredValue)
                 {
-                    return encodingList[i] + encodingList[j-1];
+                    return encodingList[i] + encodingList[j-1].ToString();
                 }
             }
 
-            return ulong.MinValue;
+            return ulong.MinValue.ToString();
         }
     }
 }

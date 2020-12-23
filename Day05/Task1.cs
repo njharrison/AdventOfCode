@@ -5,7 +5,7 @@ namespace AdventOfCode.Day05
 {
     class Task1 : ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var seatConverter = new SeatConverter();
 
@@ -20,7 +20,7 @@ namespace AdventOfCode.Day05
                 }
             }
 
-            return maxSeatId;
+            return maxSeatId.ToString();
         }
     }
 }

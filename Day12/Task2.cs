@@ -8,7 +8,7 @@ namespace AdventOfCode.Day12
 {
     class Task2 : Day12TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var x = 0.0;
             var y = 0.0;
@@ -53,7 +53,7 @@ namespace AdventOfCode.Day12
                 }
             }
 
-            return (ulong)(Math.Abs(x) + Math.Abs(y));
+            return (Math.Abs(x) + Math.Abs(y)).ToString();
         }
 
         private Tuple<double, double> RotatePoint(double wayPointXDelta, double wayPointYDelta, int angle)

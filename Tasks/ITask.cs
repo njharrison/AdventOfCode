@@ -6,6 +6,6 @@ namespace AdventOfCode.Tasks
 {
     interface ITask
     {
-        ulong Solve(string[] input);
+        string Solve(string[] input);
     }
 }

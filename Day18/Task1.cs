@@ -10,7 +10,7 @@ namespace AdventOfCode.Day18
 {
     class Task1 : Day18TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             long sum = 0;
             foreach (var line in input)
@@ -19,7 +19,7 @@ namespace AdventOfCode.Day18
                 sum += expressionEvaluator.Evaluate(line, false);
             }
 
-            return (ulong)sum;
+            return sum.ToString();
         }
     }
 }

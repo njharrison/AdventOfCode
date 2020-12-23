@@ -6,7 +6,7 @@ namespace AdventOfCode.Day05
 {
     class Task2 : ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var seatConverter = new SeatConverter();
 
@@ -16,7 +16,7 @@ namespace AdventOfCode.Day05
             {
                 if (orderedSeats[i] - orderedSeats[i - 1] > 1)
                 {
-                    return orderedSeats[i] - 1;
+                    return (orderedSeats[i] - 1).ToString();
                 }
             }
 

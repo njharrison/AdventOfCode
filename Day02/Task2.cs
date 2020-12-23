@@ -6,7 +6,7 @@ namespace AdventOfCode.Day02
 {
     class Task2 : ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var passwordDefinitionRegex = new Regex("(?<Index1>.*)\\-(?<Index2>.*)\\ (?<Letter>.*)\\:\\ (?<Password>.*)");
 
@@ -28,7 +28,7 @@ namespace AdventOfCode.Day02
                 }
             }
 
-            return validPasswords;
+            return validPasswords.ToString();
         }
     }
 }

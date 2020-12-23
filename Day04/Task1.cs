@@ -15,11 +15,11 @@ namespace AdventOfCode.Day04
             return requiredFields.All(a => passport.ContainsKey(a));
         }
 
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var passportListValidCounter = new PassportListValidCounter(this);
 
-            return passportListValidCounter.CalculateValidCount(input);
+            return passportListValidCounter.CalculateValidCount(input).ToString();
         }
     }
 }

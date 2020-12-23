@@ -10,7 +10,7 @@ namespace AdventOfCode.Day14
 {
     class Task2 : Day14TaskBase, ITask
     {
-        public ulong Solve(string[] input)
+        public string Solve(string[] input)
         {
             var oneMask = new BitArray(36);
             var floatingIndices = new List<int>();
@@ -60,7 +60,7 @@ namespace AdventOfCode.Day14
                 sum += value;
             }
 
-            return sum;
+            return sum.ToString();
         }
 
         private static ulong ConvertToLong(BitArray value)
